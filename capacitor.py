@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from ex1.factories import HealingCreatureFactory, TransformCreatureFactory
 
 
@@ -38,4 +39,5 @@ def capacitor() -> None:
     print(morph.revert())
 
 
-capacitor()
+if __name__ == "__main__":
+    capacitor()
