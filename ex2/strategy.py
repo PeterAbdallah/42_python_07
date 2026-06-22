@@ -3,6 +3,9 @@ from ex0.creature import Creature
 
 
 class BattleStrategy(ABC):
+    def __init__(self) -> None:
+        self.type = "Base Strategy"
+
     @abstractmethod
     def act(self, creature: Creature) -> None:
         pass
